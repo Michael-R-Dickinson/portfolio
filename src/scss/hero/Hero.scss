@@ -74,6 +74,46 @@
 
     .section-image {
         width: 60%;
+
+        .graphic-wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+
+            overflow: hidden;
+
+            .overlayed-image {
+                width: 100%;
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+
+            %overlayed-scaling-image {
+                @extend .overlayed-image;
+                position: relative;
+                transition: 0.4s ease;
+
+                &:hover {
+                    transform: translateX(-5%) scale(1.05);
+                }
+            }
+
+            #holo-sidebar {
+                @extend %overlayed-scaling-image;
+                width: 20%;
+                top: 10%;
+                left: 27%;
+            }
+
+
+            #holo-panel {
+                @extend %overlayed-scaling-image;
+                width: 32%;
+                top: 20%;
+                left: 44%;
+            }
+
+        }
     }
 
 }
@@ -84,4 +124,10 @@
     background-color: rgb(255, 255, 255);
     opacity: 0.35;
     margin: 25px 0px;
+}
+
+.image-blurred-edge {
+    background-image: url('http://lorempixel.com/200/200/city/9');
+    /* you need to match the shadow color to your background or image border for the desired effect*/
+    box-shadow: 0 0 8px 8px white inset;
 }
