@@ -75,6 +75,9 @@
     .section-image {
         width: 60%;
 
+        display: flex;
+        align-items: center;
+
         .graphic-wrapper {
             display: grid;
             grid-template-columns: 1fr;

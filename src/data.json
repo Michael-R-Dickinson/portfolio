@@ -1,0 +1,9 @@
+{
+    "hero_bio": "Hi I'm Michael! I'm a python machine learning developer and a junior in high school. I strive to always be curious and excited to learn more!",
+    "experience": [
+        {
+            "title": "SheerID",
+            "content": "Worked on web scraping, data validation and google account integration under Dan Beauchaine"
+        }
+    ]
+}

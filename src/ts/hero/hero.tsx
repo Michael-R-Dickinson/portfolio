@@ -1,10 +1,10 @@
 import ImageSection from "../image_section"
 import InfoSection from "./info_section"
 
-function Hero({ }) {
+function Hero({ bio }: { bio: string }) {
     return (
         <div className="hero">
-            <InfoSection />
+            <InfoSection bio={bio} />
             <ImageSection />
         </div>
 
