@@ -1,7 +1,7 @@
-function Project({ }) {
+function Project({ children, active }: { children: React.ReactNode | React.ReactNode[], active: string }) {
     return (
-        <div>
-
+        <div className={`project-wrapper ${active}`}>
+            {children}
         </div>
     )
 }
