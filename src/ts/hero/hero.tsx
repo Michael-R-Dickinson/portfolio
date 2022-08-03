@@ -1,4 +1,4 @@
-import ImageSection from "../image_section"
+import ImageSection from "./image_section"
 import InfoSection from "./info_section"
 
 function Hero({ bio }: { bio: string }) {
