@@ -27,7 +27,8 @@ function App() {
         </Projects>
         <Contact {...staticData.contact_info} />
       </div>
-    </div>);
+    </div>
+  );
 }
 
 export default App;

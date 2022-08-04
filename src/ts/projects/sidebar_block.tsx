@@ -5,7 +5,7 @@ function SidebarBlock({ image, active, onClick }: { image: any; active: boolean,
     return (
         <div className={`sidebar-animation-wrapper ${active && 'active-block'}`}>
             <div className='sidebar-block' onClick={onClick}>
-                {/* <img src={image} alt="bert-thumbnail" /> */}
+                <img src={image} alt="project-thumbnail" />
             </div>
         </div>
     )

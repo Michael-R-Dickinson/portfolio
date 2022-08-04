@@ -1,0 +1,93 @@
+.bert-project {
+    width: 100%;
+    height: $bert-top-ratio;
+
+    background-color: rgba(255, 255, 255, 1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    box-sizing: border-box;
+    padding: $bert-panel-padding-top $bert-panel-padding-side;
+    border-radius: $panel-border-radius $panel-border-radius 0px 0px;
+
+    position: relative;
+
+    .bert-container {
+        height: $bert-image-size;
+        // width: 100%;
+
+        overflow: hidden;
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        img {
+            display: block;
+            width: auto;
+            height: 100%;
+
+            object-fit: cover;
+
+            position: relative;
+            // top: 3rem;
+        }
+    }
+
+    .search-bar {
+        height: $bert-search-size;
+
+        display: flex;
+        align-items: center;
+
+        font-size: 2.5rem;
+        font-weight: normal;
+        // font-family: bilo;
+
+        padding-left: 3rem;
+        padding-right: 3rem;
+
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        border-radius: 1.5rem;
+
+        img {
+            width: auto;
+            height: 55%;
+            margin-right: 1rem;
+        }
+    }
+
+    .paper {
+        height: 90%;
+        width: 100%-2*$bert-panel-padding-side;
+
+        position: absolute;
+        top: $bert-search-size+ $bert-image-size + 5%;
+
+        border-radius: 1rem;
+        background-color: rgb(255, 255, 255);
+        filter: drop-shadow(0px 3px 16px rgba(0, 0, 0, 0.10));
+
+        padding: 5% 10% 0% 10%;
+        box-sizing: border-box;
+
+        h4 {
+            text-align: center;
+            font-size: 1.66rem;
+            font-weight: normal;
+
+            margin: 0px;
+            margin-top: 1rem;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

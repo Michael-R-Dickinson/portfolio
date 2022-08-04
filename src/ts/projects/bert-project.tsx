@@ -4,7 +4,7 @@ import bertGraph from '../../assets/bert_graph.png';
 
 function BertProject() {
     return (
-        <div className="project">
+        <div className="bert-project">
             <div className='bert-container'>
                 <img src={googleBertLogo} alt="google-bert-logo" />
             </div>
