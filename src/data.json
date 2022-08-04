@@ -5,5 +5,15 @@
             "title": "SheerID",
             "content": "Worked on web scraping, data validation and google account integration under Dan Beauchaine"
         }
-    ]
+    ],
+    "project_descriptions": {
+        "bert": "A neural network model that can be used to classify text into different categories",
+        "nmt": "A neural network model that can be used to translate text from one language to another",
+        "ml_gui": "A GUI that can be used to train a neural network model"
+    },
+    "contact_info": {
+        "email": "michael.dickinson3949@gmail.com",
+        "message": "I'm always down to talk \nSend me a message any time!",
+        "description": "Or contact me directly at: michael.dickinson3949@gmail.com"
+    }
 }
