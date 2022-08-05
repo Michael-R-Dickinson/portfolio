@@ -3,10 +3,10 @@ import InfoSection from "./info_section"
 
 function Hero({ bio }: { bio: string }) {
     return (
-        <div className="hero">
+        <section className="hero scroll-section">
             <InfoSection bio={bio} />
             <ImageSection />
-        </div>
+        </section>
 
     )
 }

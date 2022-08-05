@@ -1,6 +1,6 @@
 function Contact({ email, message, description }: { email: string, message: string, description: string }) {
     return (
-        <div className="contact-container">
+        <section className="contact-container scroll-section">
             <h2>I'm always down to talk<br />Send me a message any time!</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <form>
@@ -14,7 +14,7 @@ function Contact({ email, message, description }: { email: string, message: stri
                 <input type="text" className='contact-input' placeholder="Enter your message" />
                 <input type="submit" className='submit-button' value='Submit' />
             </form>
-        </div>
+        </section>
     )
 }
 

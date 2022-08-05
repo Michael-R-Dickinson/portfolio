@@ -15,7 +15,7 @@ function Projects({ children, sidebarThumbnails }: { children: JSX.Element[], si
         <SidebarBlock image={sidebarThumbnails[index]} onClick={() => setActiveProject(index)} active={(activeProject == index)} key={index} />)
 
     return (
-        <section className="projects scroll-section">
+        <section id='projects' className="projects scroll-section">
             <div className="sidebar">
                 <div className="blocks-container">
                     {sidebarBlocks}

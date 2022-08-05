@@ -1,0 +1,17 @@
+.App-body {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.scroll-section {
+    scroll-snap-align: top;
+}
+
+body,
+.App {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}

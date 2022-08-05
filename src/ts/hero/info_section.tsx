@@ -6,7 +6,7 @@ function InfoSection({ bio }: { bio: string }) {
                 <div className="horizontal-line" />
                 <p>{bio}</p>
             </div>
-            <button>Projects</button>
+            <a href='#projects'>Projects</a>
         </div>
 
 

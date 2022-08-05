@@ -52,15 +52,20 @@
             // text-align: justify;
         }
 
-        button {
+        a {
             width: 16rem;
             height: 5rem;
             background-color: #3a3743;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             filter: drop-shadow(7px 7px 22px rgba(0, 0, 0, 0.44));
 
             font-family: Candara;
             font-size: 2rem;
+            text-decoration: none;
             color: rgba(255, 255, 255, 0.6);
 
             border: 3px solid rgba(92, 99, 233, 0.8);
