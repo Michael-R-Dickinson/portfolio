@@ -12,6 +12,8 @@ import Projects from './projects/projects';
 import BertProject from './projects/bert-project';
 import NmtProject from './projects/nmt_project';
 import Contact from './contact/Contact';
+import MlGuiProject from './projects/mlgui_project';
+import ClassificationProject from './projects/classification_project';
 function App() {
 
   return (
@@ -22,8 +24,8 @@ function App() {
         <Projects sidebarThumbnails={[bertThumbnail, NmtThumbnail, bertThumbnail, bertThumbnail]}>
           <BertProject />
           <NmtProject />
-          <BlankProject />
-          <BlankProject />
+          <MlGuiProject />
+          <ClassificationProject />
         </Projects>
         <Contact {...staticData.contact_info} />
       </div>

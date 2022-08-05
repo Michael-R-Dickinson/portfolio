@@ -10,7 +10,21 @@ $bert-panel-padding-top: 2%;
 $bert-search-size: 20%;
 $bert-image-size: 40%;
 
+// nmt project
+
 $nmt-primary-color: #828282;
 $nmt-small-font: 0.8rem;
 
 $panel-border-radius: 2rem;
+
+
+//classification project
+$classification-primary-text: #272727;
+$classification-secondary-text: rgba(97, 97, 97, 0.8);
+$classification-small-font: 1rem;
+
+$classification-small-card-width: 24%;
+$classification-big-card-width: $classification-small-card-width * 1.3;
+
+$classification-small-card-height: 75%;
+$classification-big-card-height: $classification-small-card-height * 1.1;
