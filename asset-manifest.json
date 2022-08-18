@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.41c7b12c.css",
-    "main.js": "/static/js/main.8f9bdaa9.js",
+    "main.js": "/static/js/main.b90c48f8.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/iso-laptop-touchpadless.png": "/static/media/iso-laptop-touchpadless.05d4e40137d761004ea9.png",
     "static/media/mlgui_thumbnail.png": "/static/media/mlgui_thumbnail.7df2a24fb185c7883eb6.png",
@@ -21,11 +21,11 @@
     "static/media/touchpad.png": "/static/media/touchpad.fac048496752889684be.png",
     "index.html": "/index.html",
     "main.41c7b12c.css.map": "/static/css/main.41c7b12c.css.map",
-    "main.8f9bdaa9.js.map": "/static/js/main.8f9bdaa9.js.map",
+    "main.b90c48f8.js.map": "/static/js/main.b90c48f8.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.41c7b12c.css",
-    "static/js/main.8f9bdaa9.js"
+    "static/js/main.b90c48f8.js"
   ]
 }
