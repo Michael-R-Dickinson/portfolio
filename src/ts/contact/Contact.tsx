@@ -1,22 +1,36 @@
 import { useForm, SubmitHandler } from "react-hook-form";
+import axios from "axios";
+
 
 function Contact({ email, message, description }: { email: string, message: string, description: string }) {
+
+    const sendEmail: SubmitHandler<formInputs>= async ({email, name, message}: { email: string, name: string, message: string }) => {
+        console.log (email, name, message)
+        const paramString = `email=${email}&name=${name}&message=${message}`;
+        const { data } = await axios.get(
+            `https://eg5amobixi.execute-api.us-east-1.amazonaws.com/Deploy/workshopLambda?${paramString}`
+        )
+        console.log (data)
+        return data;
+    }
+
     type formInputs = {
         name: string,
         email: string;
         message: string;
     }
 
-    const { register, handleSubmit, formState: { errors } } = useForm<formInputs>();
-    const onSubmit: SubmitHandler<formInputs> = data => window.location.href = (
-        `mailto:${email}?subject=contact from ${data.name}&body=${data.message}`
-    );
+    const {
+        register,
+        handleSubmit,
+        formState: { errors, isSubmitted },
+    } = useForm<formInputs>();
 
     return (
         <section className="contact-container scroll-section">
             <h2>{message}</h2>
             <p>{description}</p>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={handleSubmit(sendEmail)} style={{display: isSubmitted ? "none" : undefined}}>
                 <div className="id-form-container">
                     <p>Name</p>
                     <p>Email</p>
@@ -29,6 +43,8 @@ function Contact({ email, message, description }: { email: string, message: stri
 
                 <input type="submit" className='submit-button' value='Submit' />
             </form>
+
+            {isSubmitted && <p style={{marginTop: 50, fontSize: 20, color: '#707070'}}>Thank you for your message!</p>}
         </section>
     )
 }
