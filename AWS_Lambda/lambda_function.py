@@ -1,10 +1,11 @@
 import boto3 # type: ignore
 import json
+import os
 
 client = boto3.client('ses')
 
-SENDER = 'michael.dickinson686@gmail.com'
-RECIPIENT = 'michael.dickinson3949@gmail.com'
+SENDER = os.environ["sender_email"]
+RECIPIENT = os.environ["reciever_email"]
 
 def https_format(status_code, message):
     return {
