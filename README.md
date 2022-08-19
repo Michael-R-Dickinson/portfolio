@@ -12,9 +12,16 @@ Although this is just a learning proect for me, contributions would be appreciat
 If you'd like to create issues or pull request in changes, dont hesitate to do so.
 Criteria for issues is:
 
--   small
--   descriptive
--   testable locally
+-   small.
+-   descriptive.
+-   testable locally.
 
 To contribute code, follow the fork, edit, pr pipeline.
 I may be a bit slow to look at changes so please be patient
+
+## Running Locally
+
+-   Ensure npm is installed locally.
+-   Clone the repo to your local device.
+-   Run `npm i` to install local package dependencies.
+-   Run `npm start` to open a live tab and start hot reloading.
