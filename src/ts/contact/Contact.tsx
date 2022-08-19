@@ -8,8 +8,8 @@ function Contact({ email, message, description }: { email: string, message: stri
         console.log (email, name, message)
         const paramString = `email=${email}&name=${name}&message=${message}`;
         const { data } = await axios.get(
-            `https://eg5amobixi.execute-api.us-east-1.amazonaws.com/Deploy/workshopLambda?${paramString}`
-        )
+            `https://eylmmtqgytvub4dnasfs7abmhm0iyazl.lambda-url.us-east-1.on.aws/?${paramString}`
+        );
         console.log (data)
         return data;
     }
